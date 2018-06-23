@@ -41,7 +41,9 @@ function draw() {
 
 			for (let j = 0; j < 20; j++){
 
-				let h = map(j , 0, 20 , 0.0, 1.0);
+				let jh = map(j, 0, 19, -TWO_PI, TWO_PI);
+
+				let h = map(sin((jh / 20) + node.unitU) , -1, 1 , 0.0, 1.0);
 				fill(h, 1.0, 1.0);
 
 				translate(node.x * (0.5 * Math.sin(node.unitU * j)) ,
