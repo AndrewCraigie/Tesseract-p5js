@@ -6,7 +6,7 @@ let tessRact1;
 let uValue = 0;
 let uT = 0;
 
-let camR = 3000.0;
+let camR = 2500.0;
 
 let camX = 0.0;
 let camY = 0.0;
@@ -55,7 +55,7 @@ function setup() {
 
 
   // Params: Side length, unitValue, x, y, z
-  tessRact1 = new Tesseract(500, -0.2, 0, 0, 0);
+  tessRact1 = new Tesseract(500, -0.2, 0, -200, 0);
 
   colorMode(HSB, 1.0, 1.0, 1.0, 1.0);
 
